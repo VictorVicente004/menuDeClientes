@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
 <?php
 // Inclua o arquivo com a classe Clientes:
 require_once 'Clientes.php'; 
@@ -17,3 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
+<button onclick="voltarTelaInicial()">Tela Inicial</button>
+<script>
+  function voltarTelaInicial() {
+    window.location.href = "index.html"; // Substitua "index.html" pelo nome do arquivo da sua tela inicial
+  }
+</script>    
+</body>
+</html>
